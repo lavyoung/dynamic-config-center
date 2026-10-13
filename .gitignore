@@ -2,6 +2,7 @@ target/
 target-effective-pom
 target-effective-pom.xml
 .idea/
+.flattened-pom.xml
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup

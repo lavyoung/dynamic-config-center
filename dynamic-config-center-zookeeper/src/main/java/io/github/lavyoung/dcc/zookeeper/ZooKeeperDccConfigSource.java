@@ -28,7 +28,7 @@ public final class ZooKeeperDccConfigSource implements DccConfigSource {
      *
      * @param client Curator 客户端
      * @param rootPath 配置根路径
-     * @throws NullPointerException 参数为空时抛出
+     * @throws NullPointerException     参数为空时抛出
      * @throws IllegalArgumentException 根路径不是绝对路径时抛出
      */
     public ZooKeeperDccConfigSource(CuratorFramework client, String rootPath) {
