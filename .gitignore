@@ -1,4 +1,7 @@
 target/
+target-effective-pom
+target-effective-pom.xml
+.idea/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
