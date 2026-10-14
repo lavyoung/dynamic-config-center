@@ -8,6 +8,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dynamic-config-center-spring-boot-starter</artifactId>
+    <name>${project.artifactId}</name>
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>io.github.lavyoung</groupId>

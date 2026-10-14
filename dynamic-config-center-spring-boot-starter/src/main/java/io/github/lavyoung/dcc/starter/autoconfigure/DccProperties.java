@@ -1,4 +1,4 @@
-package io.github.lavyoung.dcc.starter;
+package io.github.lavyoung.dcc.starter.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

@@ -8,12 +8,34 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dynamic-config-center-bom</artifactId>
+    <name>${project.artifactId}</name>
     <packaging>pom</packaging>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-zookeeper</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
                 <artifactId>dynamic-config-center-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-rate-limiter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-rate-limiter-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

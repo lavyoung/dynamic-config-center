@@ -8,6 +8,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dynamic-config-center-core</artifactId>
+    <name>${project.artifactId}</name>
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -16,7 +19,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
