@@ -78,7 +78,7 @@ dynamic-config-center-parent
 ```yaml
 dcc:
   enabled: true
-  connect-string: 192.168.3.127:2181
+  connect-string: 127.0.0.1:2181
   root-path: /market-forge-dcc/config
   session-timeout-ms: 18000
   connection-timeout-ms: 30000
