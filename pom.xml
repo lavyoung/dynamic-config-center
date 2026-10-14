@@ -45,6 +45,8 @@
         <module>dynamic-config-center-bom</module>
         <module>dynamic-config-center-rate-limiter</module>
         <module>dynamic-config-center-rate-limiter-spring-boot-starter</module>
+        <module>dynamic-config-center-circuit-breaker</module>
+        <module>dynamic-config-center-circuit-breaker-spring-boot-starter</module>
     </modules>
 
     <properties>
@@ -108,6 +110,16 @@
             <dependency>
                 <groupId>io.github.lavyoung</groupId>
                 <artifactId>dynamic-config-center-rate-limiter-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-circuit-breaker</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-circuit-breaker-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

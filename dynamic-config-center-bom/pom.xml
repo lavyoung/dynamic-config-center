@@ -38,6 +38,16 @@
                 <artifactId>dynamic-config-center-rate-limiter-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-circuit-breaker</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-circuit-breaker-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
