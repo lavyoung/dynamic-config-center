@@ -1,4 +1,4 @@
-package io.github.lavyoung.dcc.starter;
+package io.github.lavyoung.dcc.starter.autoconfigure;
 
 import io.github.lavyoung.dcc.core.DccFieldBinder;
 import io.github.lavyoung.dcc.zookeeper.ZooKeeperDccConfigSource;

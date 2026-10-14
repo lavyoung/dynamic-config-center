@@ -2,6 +2,8 @@ target/
 target-effective-pom
 target-effective-pom.xml
 .idea/
+*.iml
+.vscode/
 .flattened-pom.xml
 pom.xml.tag
 pom.xml.releaseBackup
@@ -11,6 +13,12 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+*.log
+*.tmp
+*.bak
+*.swp
+*.class
+
 # https://maven.apache.org/tools/wrapper/#Usage_with_or_without_Binary_JAR
 .mvn/wrapper/maven-wrapper.jar
 

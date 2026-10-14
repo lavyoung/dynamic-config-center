@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "name": "dcc.rate-limiter.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to create rate limiter beans at application startup.",
+      "defaultValue": false
+    },
+    {
+      "name": "dcc.rate-limiter.fail-open-when-capacity-exceeded",
+      "type": "java.lang.Boolean",
+      "description": "Whether to allow requests when the local rate limiter reaches its configured key capacity.",
+      "defaultValue": true
+    },
+    {
+      "name": "dcc.rate-limiter.local.max-bucket-keys",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of local token bucket keys kept in memory.",
+      "defaultValue": 100000
+    },
+    {
+      "name": "dcc.rate-limiter.local.max-reject-counter-keys",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of local reject counter keys kept in memory.",
+      "defaultValue": 100000
+    },
+    {
+      "name": "dcc.rate-limiter.local.max-blacklist-keys",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of local temporary blacklist keys kept in memory.",
+      "defaultValue": 100000
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "properties": [
+    {
+      "name": "dcc.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable Dynamic Config Center auto-configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "dcc.connect-string",
+      "type": "java.lang.String",
+      "description": "ZooKeeper connection string, for example 127.0.0.1:2181 or host1:2181,host2:2181."
+    },
+    {
+      "name": "dcc.root-path",
+      "type": "java.lang.String",
+      "description": "Root path used by Dynamic Config Center to read configuration nodes from ZooKeeper."
+    },
+    {
+      "name": "dcc.session-timeout-ms",
+      "type": "java.lang.Integer",
+      "description": "ZooKeeper session timeout in milliseconds.",
+      "defaultValue": 18000
+    },
+    {
+      "name": "dcc.connection-timeout-ms",
+      "type": "java.lang.Integer",
+      "description": "ZooKeeper connection timeout in milliseconds.",
+      "defaultValue": 30000
+    }
+  ]
+}

@@ -9,7 +9,7 @@
  * <p>职责边界：</p>
  *
  * <ul>
- *     <li>声明 {@link io.github.lavyoung.dcc.starter.DccProperties}，承载 starter 配置；</li>
+ *     <li>声明 {@link DccProperties}，承载 starter 配置；</li>
  *     <li>创建 Curator 客户端和 ZooKeeper 配置数据源；</li>
  *     <li>创建 {@link io.github.lavyoung.dcc.core.DccFieldBinder}；</li>
  *     <li>通过 Spring {@code BeanPostProcessor} 自动绑定业务 Bean 中的 DCC 字段；</li>
@@ -23,4 +23,4 @@
  * @author lavyoung
  * @since 0.1.0
  */
-package io.github.lavyoung.dcc.starter;
+package io.github.lavyoung.dcc.starter.autoconfigure;
