@@ -17,19 +17,28 @@
         <module>dynamic-config-center-zookeeper</module>
         <module>dynamic-config-center-spring-boot-starter</module>
         <module>dynamic-config-center-bom</module>
+        <module>dynamic-config-center-rate-limiter</module>
+        <module>dynamic-config-center-rate-limiter-spring-boot-starter</module>
     </modules>
 
     <properties>
-        <revision>0.1.0-SNAPSHOT</revision>
+        <revision>0.2.0-SNAPSHOT</revision>
         <java.version>17</java.version>
-        <spring-boot.version>3.2.4</spring-boot.version>
-        <curator.version>5.6.0</curator.version>
-        <junit.version>5.10.3</junit.version>
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <maven.surefire.version>3.2.5</maven.surefire.version>
         <flatten.maven.plugin.version>1.6.0</flatten.maven.plugin.version>
         <maven.source.plugin.version>3.4.0</maven.source.plugin.version>
         <maven.javadoc.plugin.version>3.12.0</maven.javadoc.plugin.version>
+
+        <spring-boot.version>3.2.4</spring-boot.version>
+        <junit.version>5.10.3</junit.version>
+
+        <!--Zookeeper 客户端 -->
+        <curator.version>5.6.0</curator.version>
+        <!-- 限流库 Bucket4j -->
+        <bucket4j.version>8.21.0</bucket4j.version>
+        <!-- slf4j-api 框架-->
+        <slf4j-api.version>2.0.19</slf4j-api.version>
     </properties>
 
     <dependencyManagement>
@@ -41,6 +50,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- 模块依赖 -->
             <dependency>
                 <groupId>io.github.lavyoung</groupId>
                 <artifactId>dynamic-config-center-core</artifactId>
@@ -57,6 +68,18 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-rate-limiter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.lavyoung</groupId>
+                <artifactId>dynamic-config-center-rate-limiter-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- 组件依赖 -->
+            <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
                 <version>${curator.version}</version>
@@ -70,6 +93,17 @@
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-test</artifactId>
                 <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bucket4j</groupId>
+                <artifactId>bucket4j_jdk17-core</artifactId>
+                <version>${bucket4j.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -8,6 +8,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dynamic-config-center-core</artifactId>
+    <name>${project.artifactId}</name>
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
